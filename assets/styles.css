@@ -1,0 +1,373 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+:root {
+	/* Colors */
+
+	--color-ink: #122033;
+	--color-muted: #667085;
+	--color-disabled: #c0c0c0;
+
+	--col-brand-l: 33%;
+	--col-brand-c: 0.08;
+	--col-brand-h: 260;
+
+	--col-sec-h: 147;
+
+	--col-base-h: 260;
+
+	--col-brand: oklch(var(--col-brand-l) var(--col-brand-c) var(--col-brand-h));
+
+	--col-1000: oklch(15% 0.03 var(--col-brand-h));
+	--col-900: oklch(17% 0.05 var(--col-brand-h));
+	--col-800: oklch(var(--col-brand-l) calc(var(--col-brand-c) * 1.2) var(--col-brand-h));
+	--col-700: oklch(47% 0.14 var(--col-brand-h));
+	--col-600: oklch(57% 0.19 var(--col-brand-h));
+	--col-500: oklch(69% 0.21 var(--col-brand-h));
+	--col-400: oklch(78% 0.16 var(--col-brand-h));
+	--col-300: oklch(85% 0.08 var(--col-brand-h));
+	--col-200: oklch(92% 0.03 var(--col-brand-h));
+	--col-100: oklch(97% 0.015 var(--col-brand-h));
+	--col-000: oklch(99% 0.008 var(--col-brand-h));
+
+	--col-sec-900: oklch(17% 0.05 var(--col-sec-h));
+	--col-sec-800: oklch(var(--col-brand-l) var(--col-brand-c) var(--col-sec-h));
+	--col-sec-700: oklch(47% 0.10 var(--col-sec-h));
+	--col-sec-600: oklch(57% 0.13 var(--col-sec-h));
+	--col-sec-500: oklch(69% 0.16 var(--col-sec-h));
+	--col-sec-400: oklch(78% 0.13 var(--col-sec-h));
+	--col-sec-300: oklch(85% 0.04 var(--col-sec-h));
+	--col-sec-200: oklch(92% 0.02 var(--col-sec-h));
+	--col-sec-100: oklch(97% 0.01 var(--col-sec-h));
+	--col-sec-000: oklch(99% 0.01 var(--col-sec-h));
+
+	--col-bw-h: 0;
+	--col-bw-900: oklch(30% 0.010 var(--col-bw-h));
+	--col-bw-800: oklch(40% 0.008 var(--col-bw-h));
+	--col-bw-700: oklch(52% 0.007 var(--col-bw-h));
+	--col-bw-600: oklch(62% 0.006 var(--col-bw-h));
+	--col-bw-500: oklch(72% 0.005 var(--col-bw-h));
+	--col-bw-400: oklch(81% 0.004 var(--col-bw-h));
+	--col-bw-300: oklch(88% 0.003 var(--col-bw-h));
+	--col-bw-250: oklch(94% 0.003 var(--col-bw-h));
+	--col-bw-200: oklch(96% 0.002 var(--col-bw-h));
+	--col-bw-100: oklch(98% 0.003 var(--col-bw-h));
+	--col-bw-000: oklch(100% 0.001 var(--col-bw-h));
+
+
+	/* SUCCESS — green */
+	--col-success-900: oklch(30% 0.09 145);
+	--col-success-700: oklch(47% 0.14 145);
+	--col-success-500: oklch(65% 0.17 145);
+	--col-success-300: oklch(85% 0.08 145);
+	--col-success-200: oklch(92% 0.05 145);
+	--col-success-100: oklch(97% 0.025 145);
+
+	/* INFO — blue */
+	--col-info-900: oklch(30% 0.10 245);
+	--col-info-700: oklch(47% 0.15 245);
+	--col-info-500: oklch(69% 0.17 245);
+	--col-info-300: oklch(85% 0.08 245);
+	--col-info-200: oklch(92% 0.05 245);
+	--col-info-100: oklch(97% 0.025 245);
+
+	/* WARNING — amber */
+	--col-warning-900: oklch(30% 0.07 80);
+	--col-warning-700: oklch(50% 0.12 80);
+	--col-warning-500: oklch(75% 0.16 80);
+	--col-warning-300: oklch(88% 0.09 80);
+	--col-warning-200: oklch(92% 0.06 80);
+	--col-warning-100: oklch(97% 0.025 80);
+
+	/* DANGER — red */
+	--col-danger-900: oklch(30% 0.10 25);
+	--col-danger-700: oklch(47% 0.17 25);
+	--col-danger-500: oklch(62% 0.22 25);
+	--col-danger-300: oklch(85% 0.09 25);
+	--col-danger-200: oklch(92% 0.06 25);
+	--col-danger-100: oklch(97% 0.025 25);
+
+	/* ACCENT / SPECIAL — purple */
+	--col-accent-900: oklch(30% 0.10 300);
+	--col-accent-700: oklch(47% 0.16 300);
+	--col-accent-500: oklch(69% 0.18 300);
+	--col-accent-300: oklch(85% 0.08 300);
+	--col-accent-200: oklch(92% 0.05 300);
+	--col-accent-100: oklch(97% 0.025 300);
+
+	/* Colors End */
+
+	--shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	--shadow-s: 0 5px 5px rgba(0, 0, 0, 0.02);
+	--shadow-m: 0 5px 10px rgba(0, 0, 0, 0.03);
+	--shadow-l: inset 0 1px 2px #ffffff70,
+		/* top highlight */
+		0 4px 6px #00000030,
+		/* dark shadow */
+		0 6px 14px #00000006;
+	/* soft shadow */
+
+	--font-size-image: 1.5rem;
+
+	--gap-size: 1.5rem;
+	--border-radius-s: .7rem;
+	--border-radius-m: 1.5rem;
+
+	--font-serif: "Structure Nova", Structure, Candara, "Noto Serif", serif;
+	;
+	--font-sans: "Simple-Pro-Display Local", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	;
+	--font-rounded: "Simple-Pro-Rounded Local", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	;
+	--font-mono: "Simple-Mono Local", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+	font-size: clamp(1rem, 0.6rem + 0.5svw, 1.125rem);
+
+	--card-correction-margin: 1rem;
+}
+
+html {
+	background: var(--col-bw-000);
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--col-bw-100);
+}
+
+body {
+	font-family: var(--font-sans), sans-serif;
+	color: var(--color-ink);
+	margin: 0;
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-serif), serif;
+	margin-bottom: .7em;
+	font-weight: 700;
+	color: var(--color-ink);
+}
+
+h1 {
+	font-size: clamp(2rem, 3vw, 3rem);
+	line-height: 1.05;
+	letter-spacing: -.03em;
+	max-width: 46rem;
+	margin: 0 0 1rem;
+}
+
+h2 {
+	max-width: 42rem;
+	font-size: clamp(1.6rem, 2.6vw, 2.5rem);
+	line-height: 1.05;
+	letter-spacing: -.03em;
+	margin-block: 1rem 0.3rem;
+}
+
+h3 {
+	font-size: 1.3rem;
+	margin-block: .8rem 0.3rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	line-height: 1.5;
+	margin: .5rem 0 1rem;
+}
+
+a {
+	color: var(--col-600);
+
+	&:link {
+		text-decoration: none;
+	}
+
+	&:visited {}
+
+	&:active {
+		color: var(--col-700);
+	}
+
+	/* not on mobile */
+	@media (hover: hover) and (pointer: fine) {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&.none {
+		all: unset;
+
+		&:hover {
+			all: unset;
+		}
+
+		&:active {
+			all: unset;
+		}
+	}
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+	margin-block: 2rem;
+}
+
+hgroup {
+	h1 {
+		margin-bottom: 0.5rem;
+	}
+
+	p {
+		margin-top: 0;
+		color: var(--color-muted);
+	}
+}
+
+.center {
+	text-align: center;
+}
+
+.card-correction {
+	padding-inline: var(--card-correction-margin);
+}
+
+.select {
+	position: relative;
+	display: inline-flex;
+	align-items: right;
+	gap: .5rem;
+
+	select {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+
+		width: 100%;
+
+		background: none;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		outline: none;
+
+		color: inherit;
+		font: inherit;
+		line-height: inherit;
+
+		padding: 0;
+		margin: 0;
+		cursor: pointer;
+	}
+
+	&::after {
+		content: "+";
+	}
+}
+
+.container-wrapper {
+	width: 100%;
+	margin-inline: auto;
+}
+
+.container-large {
+	width: calc(100vw - 1rem);
+	margin-inline: auto;
+}
+
+.container-medium {
+	width: calc(100vw - 2rem);
+	margin-inline: auto;
+}
+
+.container-small {
+	width: calc(100vw - 3rem);
+	margin-inline: auto;
+}
+
+@media (max-width: 30rem) {
+	.container-medium.container-mobile {
+		width: 100svw;
+	}
+
+	.container-large.container-mobile {
+		width: 100svw;
+	}
+}
+
+@media (min-width: 30rem) {
+	:root {
+		--font-size-image: 1.7rem;
+	}
+
+	.container-large {
+		width: calc(100vw - 2rem);
+	}
+
+	.container-medium {
+		width: calc(100vw - 4rem);
+	}
+
+	.container-small {
+		width: calc(100vw - 6rem);
+	}
+}
+
+@media (max-width: 60rem) {
+	.container-large.container-mobile {
+		width: 100svw;
+	}
+}
+
+
+@media (min-width: 60rem) {
+	:root {
+		--font-size-image: 2.5rem;
+	}
+
+	.container-large {
+		width: max(55rem, calc(100vw - 10rem));
+	}
+
+	.container-medium {
+		width: max(50rem, calc(100vw - 30rem));
+	}
+
+	.container-small {
+		width: max(40rem, calc(100vw - 50rem));
+	}
+}
+
+@media (min-width: 130rem) {
+	:root {
+		--font-size-image: 3rem;
+	}
+
+	.container-large {
+		width: 110rem;
+	}
+
+	.container-medium {
+		width: 90rem;
+	}
+
+	.container-small {
+		width: 60rem;
+	}
+}
