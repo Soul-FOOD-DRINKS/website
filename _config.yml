@@ -24,11 +24,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   Soul Food & Drinks ist euer Partner für Catering in Wandlitz, Berlin und Brandenburg. Ob Firmencatering, Eventcatering, private Feiern, Hochzeiten, Geburtstage, Messen oder exklusive Business-Events – wir bringen gutes Essen, starke Drinks und das passende Eventgefühl direkt zu euch.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://soul-food-drinks.de" # the base hostname & protocol for your site, e.g. http://example.com
+ignore_theme_config: true
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+# theme: minima
+#plugins:
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
