@@ -26,6 +26,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://soul-food-drinks.de" # the base hostname & protocol for your site, e.g. http://example.com
 ignore_theme_config: true
 
+collections:
+  - landing_page_sections
+
 # Build settings
 # theme: minima
 #plugins:

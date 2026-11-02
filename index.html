@@ -1,3 +1,7 @@
+---
+title: Soul FOOD & DRINKS
+---
+
 <header>
     <div class="background">
         <img class="active" src="/assets/images/Soße_auf_Fleisch_mit_Pat.jpeg" alt="Soße auf Fleisch im Grill" />
@@ -32,7 +36,11 @@
         <a href="#uber_uns">Über uns</a>
     </aside>
 
-    <section id="main">
+    <section>
+        {% for section in site.landing_page_sections %}
+            <h2>{{ section.name }}</h2>
+            {{ section.content }}
+        {% endfor %}
     </section>
 </main>
 
