@@ -15,25 +15,25 @@
                 alt="Soße auf Fleisch im Grill"
             />
             <img
-                src="/assets/images/Grill_Brot_Fleisch.jpeg"
+                src="{{'assets/images/Grill_Brot_Fleisch.jpeg' | relative_url}}"
                 alt="Grill mit Brot und Fleisch"
             />
             <img
-                src="/assets/images/Bier_am_Wasser.jpeg"
+                src="{{'assets/images/Bier_am_Wasser.jpeg' | relative_url}}"
                 alt="Wandlitzer Bier am Wandlitzsee"
             />
             <img
-                src="/assets/images/Fleisch_auf_Grill.jpeg"
+                src="{{'assets/images/Fleisch_auf_Grill.jpeg' | relative_url}}"
                 alt="Gegrilltes Fleisch auf Grill"
             />
             <img
-                src="/assets/images/Grill_Brot_Fleisch.jpeg"
+                src="{{'assets/images/Grill_Brot_Fleisch.jpeg' | relative_url}}"
                 alt="Gegrilltes Fleisch auf Grill"
             />
         </div>
 
         <nav>
-            <img src="/assets/images/soul-food-drink-logo.png" alt="Soul FOOD & DRINKS Logo" />
+            <img src="{{'assets/images/soul-food-drink-logo.png' | relative_url}}" alt="Soul FOOD & DRINKS Logo" />
             {% for section in site.sections %}
             <a href="#{{section.id}}">{{section.name}}</a>
             {% endfor %}
@@ -58,7 +58,7 @@
     </main>
 
     <footer>
-        <img src="/assets/images/soul-food-drink-logo.png" alt="Soul FOOD & DRINKS Logo" />
+        <img src="{{'assets/images/soul-food-drink-logo.png' | relative_url}}" alt="Soul FOOD & DRINKS Logo" />
         <p>Soul FOOD & DRINKS</p>
         <p>Basdorfer Weg 1A</p>
         <p>16348 Wandlitz</p>
