@@ -1,60 +1,73 @@
 ---
-title: Soul FOOD & DRINKS
 ---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>Soul FOOD & DRINKS Catering Wandlitz</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <header>
+        <div class="background">
+            <img
+                src="/assets/images/Soße_auf_Fleisch_mit_Pat.jpeg"
+                alt="Soße auf Fleisch im Grill"
+            />
+            <img
+                src="/assets/images/Grill_Brot_Fleisch.jpeg"
+                alt="Grill mit Brot und Fleisch"
+            />
+            <img
+                src="/assets/images/Bier_am_Wasser.jpeg"
+                alt="Wandlitzer Bier am Wandlitzsee"
+            />
+            <img
+                src="/assets/images/Fleisch_auf_Grill.jpeg"
+                alt="Gegrilltes Fleisch auf Grill"
+            />
+            <img
+                src="/assets/images/Grill_Brot_Fleisch.jpeg"
+                alt="Gegrilltes Fleisch auf Grill"
+            />
+        </div>
 
-<header>
-	<div class="background">
-		<img
-			class="active"
-			src="/assets/images/Soße_auf_Fleisch_mit_Pat.jpeg"
-			alt="Soße auf Fleisch im Grill"
-		/>
-		<img
-			src="/assets/images/Grill_Brot_Fleisch.jpeg"
-			alt="Grill mit Brot und Fleisch"
-		/>
-		<img
-			src="/assets/images/Bier_am_Wasser.jpeg"
-			alt="Wandlitzer Bier am Wandlitzsee"
-		/>
-		<img
-			src="/assets/images/Fleisch_auf_Grill"
-			alt="Gegrilltes Fleisch auf Grill"
-		/>
-	</div>
+        <nav>
+            <img src="/assets/images/soul-food-drink-logo.png" alt="Soul FOOD & DRINKS Logo" />
+            {% for section in site.sections %}
+            <a href="#{{section.id}}">{{section.name}}</a>
+            {% endfor %}
+        </nav>
+        <aside>
+            <a>Catering Preisliste</a>
+            <a>Grill-Catering Preisliste</a>
+        </aside>
+    </header>
+    <main>
+        <aside>
+            {% for section in site.sections %}
+            <a href="#{{section.id}}">{{section.name}}</a>
+            {% endfor %}
+        </aside>
 
-	<nav>
-		<img src="/assets/images/soul-food-drink-logo.png" alt="Soul FOOD & DRINKS Logo" />
-		{% for section in site.sections %}
-		<a href="#{{section.id}}">{{section.name}}</a>
-		{% endfor %}
-	</nav>
-	<aside>
-		<a>Catering Preisliste</a>
-		<a>Grill-Catering Preisliste</a>
-	</aside>
-</header>
-<main>
-	<aside>
-		{% for section in site.sections %}
-		<a href="#{{section.id}}">{{section.name}}</a>
-		{% endfor %}
-	</aside>
+        <section>
+            {% for section in site.sections %}
+            <h2>{{ section.name }}</h2>
+            {{ section.content }} {% endfor %}
+        </section>
+    </main>
 
-	<section>
-		{% for section in site.sections %}
-		<h2>{{ section.name }}</h2>
-		{{ section.content }} {% endfor %}
-	</section>
-</main>
+    <footer>
+        <img src="/assets/images/soul-food-drink-logo.png" alt="Soul FOOD & DRINKS Logo" />
+        <p>Soul FOOD & DRINKS</p>
+        <p>Basdorfer Weg 1A</p>
+        <p>16348 Wandlitz</p>
+        <p>Mail@Soul-Food-Drinks.de</p>
+        <p>+49 152 0173 3259</p>
+        <p>Soul-Food-Drinks.de</p>
+        <p>Inhaber:Pat Gottfried</p>
+    </footer>
 
-<footer>
-	<img src="/assets/images/soul-food-drink-logo.png" alt="Soul FOOD & DRINKS Logo" />
-	<p>Soul FOOD & DRINKS</p>
-	<p>Basdorfer Weg 1A</p>
-	<p>16348 Wandlitz</p>
-	<p>Mail@Soul-Food-Drinks.de</p>
-	<p>+49 152 0173 3259</p>
-	<p>Soul-Food-Drinks.de</p>
-	<p>Inhaber:Pat Gottfried</p>
-</footer>
+    <script src="https://cdn.jsdelivr.net/npm/hyperscript.org@0.9.94/dist/_hyperscript.min.js" integrity="sha384-Vhc5IAlz1zenO+d5PjrPP8UuDzlMX30xrv2aMzX0DWZ15ZUvqX7RBqvRTEsavX4R" crossorigin="anonymous"></script>
+  </body>
+</html>
