@@ -27,7 +27,7 @@ url: "https://soul-food-drinks.de" # the base hostname & protocol for your site,
 ignore_theme_config: true
 
 collections:
-  - landing_page_sections
+  - sections
 
 # Build settings
 # theme: minima
