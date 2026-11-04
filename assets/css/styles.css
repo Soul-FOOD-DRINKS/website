@@ -17,27 +17,25 @@ body {
 }
 
 header {
-    height: 100 lvh;
-    width: 100 lvw;
+    height: 100svh;
+    width: 100lvw;
     position: relative;
-    display: grid;
-    grid-template-areas:
-	    "emtpy" auto
-        "logo" 5rem
-        "nav" 3rem 
-        / 100%;
 
     .background {
         z-index: 1;
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100lvw;
+        height: 100lvh;
 
         img {
+            object-fit: cover;
             position: absolute;
             top: 0;
             left:0;
             width: 100lvw;
             height: 100lvh;
-            object-fit: cover;
-
             opacity: 0;
             animation-duration: 50s;
             animation-iteration-count: infinite;
@@ -61,9 +59,17 @@ header {
     }
 
     nav {
-        grid-area: nav;
+        position: absolute;
+        bottom: 3rem;
         z-index: 10;
-        justify-self: end;
+    }
+
+    aside {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        width: 10rem;
+        height: 3rem;
     }
 }
 

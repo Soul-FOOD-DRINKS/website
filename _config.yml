@@ -27,7 +27,15 @@ url: "https://soul-food-drinks.de" # the base hostname & protocol for your site,
 ignore_theme_config: true
 
 collections:
-  - sections
+  sections:
+    order:
+      - unser_angebot.md
+      - food.md
+      - drinks.md
+      - location.md
+      - unser_versprechen.md
+      - kontakt.html
+      - uber_uns.md
 
 # Build settings
 # theme: minima
