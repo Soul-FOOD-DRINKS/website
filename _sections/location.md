@@ -1,6 +1,6 @@
 ---
-name: Loaction
-id: location
+name: Location
+section-id: location
 layout: null
 ---
 

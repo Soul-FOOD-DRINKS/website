@@ -35,7 +35,7 @@
         <nav>
             <img src="{{'assets/images/soul-food-drinks-logo.png' | relative_url}}" alt="Soul FOOD & DRINKS Logo" />
             {% for section in site.sections %}
-            <a href="#{{section.id}}">{{section.name}}</a>
+            <a href="#{{section.section-id}}">{{section.name}}</a>
             {% endfor %}
         </nav>
 
@@ -47,15 +47,16 @@
     <main>
         <aside>
             {% for section in site.sections %}
-            <a href="#{{section.id}}">{{section.name}}</a>
+            <a href="#{{section.section-id}}">{{section.name}}</a>
             {% endfor %}
         </aside>
 
-        <section>
-            {% for section in site.sections %}
-            <h2>{{ section.name }}</h2>
-            {{ section.content }} {% endfor %}
-        </section>
+        {% for section in site.sections %}
+            <section id="{{section.section-id}}">
+                <h2>{{ section.name }}</h2>
+                {{ section.content }} 
+            </section>
+        {% endfor %}
     </main>
 
     <footer>

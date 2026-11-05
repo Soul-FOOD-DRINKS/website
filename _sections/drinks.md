@@ -1,5 +1,5 @@
 ---
 name: Drinks
-id: drinks
+section-id: drinks
 layout: null
 ---

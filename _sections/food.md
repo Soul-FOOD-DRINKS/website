@@ -1,5 +1,5 @@
 ---
 name: Food
-id: food
+section-id: food
 layout: null
 ---

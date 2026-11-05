@@ -1,7 +1,7 @@
 ---
 name: Unser Angebot
+section-id: unser_angebot
 layout: null
-id: unser_angebot
 ---
 Soul Food & Drinks ist euer Partner für **Catering in Wandlitz, Berlin und Brandenburg**. Ob **Firmencatering**, **Eventcatering**, **private Feiern**, **Hochzeiten**, **Geburtstage**, **Messen** oder exklusive Business-Events – wir bringen gutes Essen, starke Drinks und das passende Eventgefühl direkt zu euch.
 

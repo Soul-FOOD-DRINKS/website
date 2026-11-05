@@ -1,6 +1,6 @@
 ---
 name: Über uns
-id: uber_uns
+section-id: uber_uns
 layout: null
 ---
 Was passiert, wenn sich zwei leidenschaftliche Gastronomen zum Dinner mit Freunden und Familie treffen? Richtig – es geht um Essen und Drinks, die Spaß machen und Lust auf mehr. 
