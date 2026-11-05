@@ -20,7 +20,7 @@
 :root {
     --col-500: rgb(201 157 103);
     --col-100: rgba(231,229,228);
-    font-size: clamp(1rem, 0.5rem + 0.6svw, 2rem);
+    font-size: clamp(16px, 0.5rem + 0.6svw, 2rem);
     font-family: brewer;
 }
 
@@ -49,8 +49,8 @@ p {
 
 header {
     padding: 0;
-    height: 100svh;
-    width: 100lvw;
+    height: 100lvh;
+    width: 100%;
     position: relative;
 
     .background {
@@ -58,16 +58,16 @@ header {
         position: absolute;
         top: 0;
         left:0;
-        width: 100lvw;
-        height: 100lvh;
+        width: 100%;
+        height: 100%;
 
         img {
             object-fit: cover;
             position: absolute;
             top: 0;
             left:0;
-            width: 100vw;
-            height: 100lvh;
+            width: 100%;
+            height: 100%;
             opacity: 0;
             animation-duration: 50s;
             animation-iteration-count: infinite;
@@ -141,10 +141,43 @@ header {
 }
 
 main {
+    aside {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0rem;
+        width: 10rem;
+        display: grid;
+        grid-template-columns: 3rem 2rem;
+        align-items: center;
+        white-space: nowrap;
+
+        a:nth-child(even) {
+            text-decoration: none;
+            opacity: 0;
+            color: var(--col-500);
+            font-weight: bold;
+            font-family: butcher;
+
+            &:hover {
+                opacity: 100;
+            }
+        }
+
+        a:nth-child(odd):hover+a {
+            opacity: 100;
+        }
+
+        svg {
+            width: 2rem;
+        }
+    }
+
     section {
         margin-inline: auto;
         margin-block: 5rem 5rem;
-        width: 75ch;
+        max-width: 75ch;
+        padding-inline: 2.5rem .75rem;
 
         h1 {
             text-align: center;
@@ -165,6 +198,13 @@ main {
                 border-radius: 50%;
             }
         }
+    }
+}
+
+
+footer {
+    img {
+        height: 15rem;
     }
 }
 
