@@ -19,7 +19,7 @@
     --col-500: rgb(201 157 103);
     --col-200: rgba(241,239,238);
     --col-100: rgba(231,229,228);
-    font-size: clamp(16px, 0.5rem + 0.6svw, 2rem);
+    font-size: clamp(.9rem, 0.5rem + 0.6svw, 2rem);
     font-family: brewer;
 }
 
@@ -115,7 +115,7 @@ header {
 
     nav {
         position: absolute;
-        bottom: 5rem;
+        bottom: 3rem;
         z-index: 10;
         font-family: butcher;
         gap: 2rem;
@@ -156,6 +156,7 @@ header {
         flex-direction: column;
         gap: .5rem;
         align-items: end;
+        z-index: 20;
 
         a {
             display: block;
@@ -268,14 +269,19 @@ main {
 
 footer {
     background-color: var(--col-900);
-    display: flex;
+    display: grid;
     justify-content: center;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     color: white;
-    padding: 2rem;
+    padding: 2rem 2rem 8rem 2rem;
     align-items: center;
+
     img {
-        height: 10rem;
+        max-height: 10rem;
+        max-width: 100%;
+        object-fit: contain;
+        justify-self: end;
     }
 }
 
