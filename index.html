@@ -1,42 +1,39 @@
----
----
 <!doctype html>
 <html lang="de">
   <head>
     <meta charset="utf-8">
     <title>Soul FOOD & DRINKS Catering Wandlitz</title>
-    <link rel="stylesheet" href="{{'assets/css/styles.css' | relative_url}}">
+    <link rel="stylesheet" href="./assets/css/styles.css">
   </head>
   <body>
     <header>
         <div class="background">
             <img
-                src="{{'assets/images/Soße_auf_Fleisch_mit_Pat.jpeg' | relative_url}}"
-                alt="Soße auf Fleisch im Grill"
-            />
+                src="./assets/images/Soße_auf_Fleisch_mit_Pat.jpeg"
+                alt="Soße auf Fleisch im Grill" />
             <img
-                src="{{'assets/images/Grill_Brot_Fleisch.jpeg' | relative_url}}"
-                alt="Grill mit Brot und Fleisch"
-            />
+                src="./assets/images/Grill_Brot_Fleisch.jpeg"
+                alt="Grill mit Brot und Fleisch" />
             <img
-                src="{{'assets/images/Bier_am_Wasser.jpeg' | relative_url}}"
-                alt="Wandlitzer Bier am Wandlitzsee"
-            />
+                src="./assets/images/Bier_am_Wasser.jpeg"
+                alt="Wandlitzer Bier am Wandlitzsee" />
             <img
-                src="{{'assets/images/Fleisch_auf_Grill.jpeg' | relative_url}}"
-                alt="Gegrilltes Fleisch auf Grill"
-            />
+                src="./assets/images/Fleisch_auf_Grill.jpeg"
+                alt="Gegrilltes Fleisch auf Grill" />
             <img
-                src="{{'assets/images/Grill_Brot_Fleisch.jpeg' | relative_url}}"
-                alt="Gegrilltes Fleisch auf Grill"
-            />
+                src="./assets/images/Grill_Brot_Fleisch.jpeg"
+                alt="Gegrilltes Fleisch auf Grill" /> 
         </div>
 
         <nav>
-            <img src="{{'assets/images/soul-food-drinks-logo.png' | relative_url}}" alt="Soul FOOD & DRINKS Logo" />
-            {% for section in site.sections %}
-            <a href="#{{section.section-id}}">{{section.name}}</a>
-            {% endfor %}
+            <img src="./assets/images/soul-food-drinks-logo.png" alt="Soul FOOD & DRINKS Logo" />
+            <a href="#unser-angebot">Unser Angebot</a>
+            <a href="#food">Food</a>
+            <a href="#drinks">Drinks</a>
+            <a href="#location">Location</a>
+            <a href="#unser-versprechen">Unser Versprechen</a>
+            <a href="#kontakt">Kontakt</a>
+            <a href="#uber-uns">Über uns</a>
         </nav>
 
         <aside>
@@ -46,26 +43,221 @@
     </header>
     <main>
         <aside>
-            {% for section in site.sections %}
-                <a href="#{{section.section-id}}">
-                    <svg width="40pt" height="40pt" version="1.1" fill="#C99D67" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <path d="m601.96 184.05c-14.379-11.52-86.273-68.953-88.91-70.461-7.3789-4.1875-18.375-5.668-26.293 0.42188-0.6875 0.54297-1.3555 1.1328-1.9805 1.7695-9.2734 9.543-17.812 18.781-26.039 27.73-24.672 26.797-47.992 52.125-90.793 85.082-29.398 22.652-65.145 46.652-109.28 73.383l-1.8711 1.125c1.4648-0.87891-139.45 84.133-143.74 86.738-10.633 6.4727-23.156 21.152-11.473 35.172 7.9727 9.582 21.184 31.809 37.762 23.023 16.57-8.7812 14.75-27.68 29.395-31.949 28.582-8.2891 58.102-26.941 83.688-48.43 24.328-20.441 35.414 3.6016 41.422-0.066406 0.875-0.54688 3.6406-1.9375 6.8828-3.6953 16.91 21.035 31.203 37.219 31.465 37.516l0.99609 1.125 1.4102-0.53906c40.129-15.262 96.488-49.34 150.79-91.156h0.011719c50.652-39.02 108.06-92.223 117.28-124.52l0.41406-1.3906zm-464.69 229.02c-3.8242 2.9531-9.3008 2.2383-12.254-1.5859-2.9531-3.8242-2.2305-9.3086 1.5898-12.254 3.832-2.9297 9.3008-2.2305 12.254 1.5977 2.957 3.8203 2.2344 9.2969-1.5898 12.242zm57.883-33.539c-3.832 2.9414-9.3203 2.2305-12.266-1.5859-2.9414-3.832-2.2227-9.3086 1.6016-12.258 3.8203-2.9297 9.3086-2.2188 12.246 1.5977 2.9531 3.8203 2.2344 9.3086-1.582 12.246zm59.262-34.637c-3.8203 2.9414-9.3008 2.2188-12.242-1.5859-2.9531-3.832-2.2383-9.3203 1.5742-12.254 3.832-2.9453 9.3203-2.2383 12.266 1.5859 2.9453 3.8125 2.2344 9.2969-1.5977 12.254zm251.24-200.86c-4.4727 3.4453-10.863 2.6094-14.309-1.8477-3.4453-4.4688-2.6133-10.859 1.8594-14.32 4.4648-3.4219 10.852-2.6055 14.297 1.8594 3.4336 4.4648 2.6055 10.871-1.8477 14.309z"></path>
-                    </svg>
-                </a>
-            <a href="#{{section.section-id}}">{{section.name}}</a>
-            {% endfor %}
+            <a href="#unser-angebot">
+                <svg width="40pt" height="40pt" version="1.1" fill="#C99D67" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="m601.96 184.05c-14.379-11.52-86.273-68.953-88.91-70.461-7.3789-4.1875-18.375-5.668-26.293 0.42188-0.6875 0.54297-1.3555 1.1328-1.9805 1.7695-9.2734 9.543-17.812 18.781-26.039 27.73-24.672 26.797-47.992 52.125-90.793 85.082-29.398 22.652-65.145 46.652-109.28 73.383l-1.8711 1.125c1.4648-0.87891-139.45 84.133-143.74 86.738-10.633 6.4727-23.156 21.152-11.473 35.172 7.9727 9.582 21.184 31.809 37.762 23.023 16.57-8.7812 14.75-27.68 29.395-31.949 28.582-8.2891 58.102-26.941 83.688-48.43 24.328-20.441 35.414 3.6016 41.422-0.066406 0.875-0.54688 3.6406-1.9375 6.8828-3.6953 16.91 21.035 31.203 37.219 31.465 37.516l0.99609 1.125 1.4102-0.53906c40.129-15.262 96.488-49.34 150.79-91.156h0.011719c50.652-39.02 108.06-92.223 117.28-124.52l0.41406-1.3906zm-464.69 229.02c-3.8242 2.9531-9.3008 2.2383-12.254-1.5859-2.9531-3.8242-2.2305-9.3086 1.5898-12.254 3.832-2.9297 9.3008-2.2305 12.254 1.5977 2.957 3.8203 2.2344 9.2969-1.5898 12.242zm57.883-33.539c-3.832 2.9414-9.3203 2.2305-12.266-1.5859-2.9414-3.832-2.2227-9.3086 1.6016-12.258 3.8203-2.9297 9.3086-2.2188 12.246 1.5977 2.9531 3.8203 2.2344 9.3086-1.582 12.246zm59.262-34.637c-3.8203 2.9414-9.3008 2.2188-12.242-1.5859-2.9531-3.832-2.2383-9.3203 1.5742-12.254 3.832-2.9453 9.3203-2.2383 12.266 1.5859 2.9453 3.8125 2.2344 9.2969-1.5977 12.254zm251.24-200.86c-4.4727 3.4453-10.863 2.6094-14.309-1.8477-3.4453-4.4688-2.6133-10.859 1.8594-14.32 4.4648-3.4219 10.852-2.6055 14.297 1.8594 3.4336 4.4648 2.6055 10.871-1.8477 14.309z"></path>
+                </svg>
+            </a>
+            <a href="#unser-angebot">Unser Angebot</a>
+
+            <a href="#food">
+                <svg width="40pt" height="40pt" version="1.1" fill="#C99D67" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="m601.96 184.05c-14.379-11.52-86.273-68.953-88.91-70.461-7.3789-4.1875-18.375-5.668-26.293 0.42188-0.6875 0.54297-1.3555 1.1328-1.9805 1.7695-9.2734 9.543-17.812 18.781-26.039 27.73-24.672 26.797-47.992 52.125-90.793 85.082-29.398 22.652-65.145 46.652-109.28 73.383l-1.8711 1.125c1.4648-0.87891-139.45 84.133-143.74 86.738-10.633 6.4727-23.156 21.152-11.473 35.172 7.9727 9.582 21.184 31.809 37.762 23.023 16.57-8.7812 14.75-27.68 29.395-31.949 28.582-8.2891 58.102-26.941 83.688-48.43 24.328-20.441 35.414 3.6016 41.422-0.066406 0.875-0.54688 3.6406-1.9375 6.8828-3.6953 16.91 21.035 31.203 37.219 31.465 37.516l0.99609 1.125 1.4102-0.53906c40.129-15.262 96.488-49.34 150.79-91.156h0.011719c50.652-39.02 108.06-92.223 117.28-124.52l0.41406-1.3906zm-464.69 229.02c-3.8242 2.9531-9.3008 2.2383-12.254-1.5859-2.9531-3.8242-2.2305-9.3086 1.5898-12.254 3.832-2.9297 9.3008-2.2305 12.254 1.5977 2.957 3.8203 2.2344 9.2969-1.5898 12.242zm57.883-33.539c-3.832 2.9414-9.3203 2.2305-12.266-1.5859-2.9414-3.832-2.2227-9.3086 1.6016-12.258 3.8203-2.9297 9.3086-2.2188 12.246 1.5977 2.9531 3.8203 2.2344 9.3086-1.582 12.246zm59.262-34.637c-3.8203 2.9414-9.3008 2.2188-12.242-1.5859-2.9531-3.832-2.2383-9.3203 1.5742-12.254 3.832-2.9453 9.3203-2.2383 12.266 1.5859 2.9453 3.8125 2.2344 9.2969-1.5977 12.254zm251.24-200.86c-4.4727 3.4453-10.863 2.6094-14.309-1.8477-3.4453-4.4688-2.6133-10.859 1.8594-14.32 4.4648-3.4219 10.852-2.6055 14.297 1.8594 3.4336 4.4648 2.6055 10.871-1.8477 14.309z"></path>
+                </svg>
+            </a>
+            <a href="#food">Food</a>
+
+            <a href="#drinks">
+                <svg width="40pt" height="40pt" version="1.1" fill="#C99D67" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="m601.96 184.05c-14.379-11.52-86.273-68.953-88.91-70.461-7.3789-4.1875-18.375-5.668-26.293 0.42188-0.6875 0.54297-1.3555 1.1328-1.9805 1.7695-9.2734 9.543-17.812 18.781-26.039 27.73-24.672 26.797-47.992 52.125-90.793 85.082-29.398 22.652-65.145 46.652-109.28 73.383l-1.8711 1.125c1.4648-0.87891-139.45 84.133-143.74 86.738-10.633 6.4727-23.156 21.152-11.473 35.172 7.9727 9.582 21.184 31.809 37.762 23.023 16.57-8.7812 14.75-27.68 29.395-31.949 28.582-8.2891 58.102-26.941 83.688-48.43 24.328-20.441 35.414 3.6016 41.422-0.066406 0.875-0.54688 3.6406-1.9375 6.8828-3.6953 16.91 21.035 31.203 37.219 31.465 37.516l0.99609 1.125 1.4102-0.53906c40.129-15.262 96.488-49.34 150.79-91.156h0.011719c50.652-39.02 108.06-92.223 117.28-124.52l0.41406-1.3906zm-464.69 229.02c-3.8242 2.9531-9.3008 2.2383-12.254-1.5859-2.9531-3.8242-2.2305-9.3086 1.5898-12.254 3.832-2.9297 9.3008-2.2305 12.254 1.5977 2.957 3.8203 2.2344 9.2969-1.5898 12.242zm57.883-33.539c-3.832 2.9414-9.3203 2.2305-12.266-1.5859-2.9414-3.832-2.2227-9.3086 1.6016-12.258 3.8203-2.9297 9.3086-2.2188 12.246 1.5977 2.9531 3.8203 2.2344 9.3086-1.582 12.246zm59.262-34.637c-3.8203 2.9414-9.3008 2.2188-12.242-1.5859-2.9531-3.832-2.2383-9.3203 1.5742-12.254 3.832-2.9453 9.3203-2.2383 12.266 1.5859 2.9453 3.8125 2.2344 9.2969-1.5977 12.254zm251.24-200.86c-4.4727 3.4453-10.863 2.6094-14.309-1.8477-3.4453-4.4688-2.6133-10.859 1.8594-14.32 4.4648-3.4219 10.852-2.6055 14.297 1.8594 3.4336 4.4648 2.6055 10.871-1.8477 14.309z"></path>
+                </svg>
+            </a>
+            <a href="#drinks">Drinks</a>
+
+            <a href="#location">
+                <svg width="40pt" height="40pt" version="1.1" fill="#C99D67" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="m601.96 184.05c-14.379-11.52-86.273-68.953-88.91-70.461-7.3789-4.1875-18.375-5.668-26.293 0.42188-0.6875 0.54297-1.3555 1.1328-1.9805 1.7695-9.2734 9.543-17.812 18.781-26.039 27.73-24.672 26.797-47.992 52.125-90.793 85.082-29.398 22.652-65.145 46.652-109.28 73.383l-1.8711 1.125c1.4648-0.87891-139.45 84.133-143.74 86.738-10.633 6.4727-23.156 21.152-11.473 35.172 7.9727 9.582 21.184 31.809 37.762 23.023 16.57-8.7812 14.75-27.68 29.395-31.949 28.582-8.2891 58.102-26.941 83.688-48.43 24.328-20.441 35.414 3.6016 41.422-0.066406 0.875-0.54688 3.6406-1.9375 6.8828-3.6953 16.91 21.035 31.203 37.219 31.465 37.516l0.99609 1.125 1.4102-0.53906c40.129-15.262 96.488-49.34 150.79-91.156h0.011719c50.652-39.02 108.06-92.223 117.28-124.52l0.41406-1.3906zm-464.69 229.02c-3.8242 2.9531-9.3008 2.2383-12.254-1.5859-2.9531-3.8242-2.2305-9.3086 1.5898-12.254 3.832-2.9297 9.3008-2.2305 12.254 1.5977 2.957 3.8203 2.2344 9.2969-1.5898 12.242zm57.883-33.539c-3.832 2.9414-9.3203 2.2305-12.266-1.5859-2.9414-3.832-2.2227-9.3086 1.6016-12.258 3.8203-2.9297 9.3086-2.2188 12.246 1.5977 2.9531 3.8203 2.2344 9.3086-1.582 12.246zm59.262-34.637c-3.8203 2.9414-9.3008 2.2188-12.242-1.5859-2.9531-3.832-2.2383-9.3203 1.5742-12.254 3.832-2.9453 9.3203-2.2383 12.266 1.5859 2.9453 3.8125 2.2344 9.2969-1.5977 12.254zm251.24-200.86c-4.4727 3.4453-10.863 2.6094-14.309-1.8477-3.4453-4.4688-2.6133-10.859 1.8594-14.32 4.4648-3.4219 10.852-2.6055 14.297 1.8594 3.4336 4.4648 2.6055 10.871-1.8477 14.309z"></path>
+                </svg>
+            </a>
+            <a href="#location">Location</a>
+
+            <a href="#unser-versprechen">
+                <svg width="40pt" height="40pt" version="1.1" fill="#C99D67" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="m601.96 184.05c-14.379-11.52-86.273-68.953-88.91-70.461-7.3789-4.1875-18.375-5.668-26.293 0.42188-0.6875 0.54297-1.3555 1.1328-1.9805 1.7695-9.2734 9.543-17.812 18.781-26.039 27.73-24.672 26.797-47.992 52.125-90.793 85.082-29.398 22.652-65.145 46.652-109.28 73.383l-1.8711 1.125c1.4648-0.87891-139.45 84.133-143.74 86.738-10.633 6.4727-23.156 21.152-11.473 35.172 7.9727 9.582 21.184 31.809 37.762 23.023 16.57-8.7812 14.75-27.68 29.395-31.949 28.582-8.2891 58.102-26.941 83.688-48.43 24.328-20.441 35.414 3.6016 41.422-0.066406 0.875-0.54688 3.6406-1.9375 6.8828-3.6953 16.91 21.035 31.203 37.219 31.465 37.516l0.99609 1.125 1.4102-0.53906c40.129-15.262 96.488-49.34 150.79-91.156h0.011719c50.652-39.02 108.06-92.223 117.28-124.52l0.41406-1.3906zm-464.69 229.02c-3.8242 2.9531-9.3008 2.2383-12.254-1.5859-2.9531-3.8242-2.2305-9.3086 1.5898-12.254 3.832-2.9297 9.3008-2.2305 12.254 1.5977 2.957 3.8203 2.2344 9.2969-1.5898 12.242zm57.883-33.539c-3.832 2.9414-9.3203 2.2305-12.266-1.5859-2.9414-3.832-2.2227-9.3086 1.6016-12.258 3.8203-2.9297 9.3086-2.2188 12.246 1.5977 2.9531 3.8203 2.2344 9.3086-1.582 12.246zm59.262-34.637c-3.8203 2.9414-9.3008 2.2188-12.242-1.5859-2.9531-3.832-2.2383-9.3203 1.5742-12.254 3.832-2.9453 9.3203-2.2383 12.266 1.5859 2.9453 3.8125 2.2344 9.2969-1.5977 12.254zm251.24-200.86c-4.4727 3.4453-10.863 2.6094-14.309-1.8477-3.4453-4.4688-2.6133-10.859 1.8594-14.32 4.4648-3.4219 10.852-2.6055 14.297 1.8594 3.4336 4.4648 2.6055 10.871-1.8477 14.309z"></path>
+                </svg>
+            </a>
+            <a href="#unser-versprechen">Unser Versprechen</a>
+
+            <a href="#kontakt">
+                <svg width="40pt" height="40pt" version="1.1" fill="#C99D67" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="m601.96 184.05c-14.379-11.52-86.273-68.953-88.91-70.461-7.3789-4.1875-18.375-5.668-26.293 0.42188-0.6875 0.54297-1.3555 1.1328-1.9805 1.7695-9.2734 9.543-17.812 18.781-26.039 27.73-24.672 26.797-47.992 52.125-90.793 85.082-29.398 22.652-65.145 46.652-109.28 73.383l-1.8711 1.125c1.4648-0.87891-139.45 84.133-143.74 86.738-10.633 6.4727-23.156 21.152-11.473 35.172 7.9727 9.582 21.184 31.809 37.762 23.023 16.57-8.7812 14.75-27.68 29.395-31.949 28.582-8.2891 58.102-26.941 83.688-48.43 24.328-20.441 35.414 3.6016 41.422-0.066406 0.875-0.54688 3.6406-1.9375 6.8828-3.6953 16.91 21.035 31.203 37.219 31.465 37.516l0.99609 1.125 1.4102-0.53906c40.129-15.262 96.488-49.34 150.79-91.156h0.011719c50.652-39.02 108.06-92.223 117.28-124.52l0.41406-1.3906zm-464.69 229.02c-3.8242 2.9531-9.3008 2.2383-12.254-1.5859-2.9531-3.8242-2.2305-9.3086 1.5898-12.254 3.832-2.9297 9.3008-2.2305 12.254 1.5977 2.957 3.8203 2.2344 9.2969-1.5898 12.242zm57.883-33.539c-3.832 2.9414-9.3203 2.2305-12.266-1.5859-2.9414-3.832-2.2227-9.3086 1.6016-12.258 3.8203-2.9297 9.3086-2.2188 12.246 1.5977 2.9531 3.8203 2.2344 9.3086-1.582 12.246zm59.262-34.637c-3.8203 2.9414-9.3008 2.2188-12.242-1.5859-2.9531-3.832-2.2383-9.3203 1.5742-12.254 3.832-2.9453 9.3203-2.2383 12.266 1.5859 2.9453 3.8125 2.2344 9.2969-1.5977 12.254zm251.24-200.86c-4.4727 3.4453-10.863 2.6094-14.309-1.8477-3.4453-4.4688-2.6133-10.859 1.8594-14.32 4.4648-3.4219 10.852-2.6055 14.297 1.8594 3.4336 4.4648 2.6055 10.871-1.8477 14.309z"></path>
+                </svg>
+            </a>
+            <a href="#kontakt">Kontakt</a>
+
+            <a href="#uber-uns">
+                <svg width="40pt" height="40pt" version="1.1" fill="#C99D67" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="m601.96 184.05c-14.379-11.52-86.273-68.953-88.91-70.461-7.3789-4.1875-18.375-5.668-26.293 0.42188-0.6875 0.54297-1.3555 1.1328-1.9805 1.7695-9.2734 9.543-17.812 18.781-26.039 27.73-24.672 26.797-47.992 52.125-90.793 85.082-29.398 22.652-65.145 46.652-109.28 73.383l-1.8711 1.125c1.4648-0.87891-139.45 84.133-143.74 86.738-10.633 6.4727-23.156 21.152-11.473 35.172 7.9727 9.582 21.184 31.809 37.762 23.023 16.57-8.7812 14.75-27.68 29.395-31.949 28.582-8.2891 58.102-26.941 83.688-48.43 24.328-20.441 35.414 3.6016 41.422-0.066406 0.875-0.54688 3.6406-1.9375 6.8828-3.6953 16.91 21.035 31.203 37.219 31.465 37.516l0.99609 1.125 1.4102-0.53906c40.129-15.262 96.488-49.34 150.79-91.156h0.011719c50.652-39.02 108.06-92.223 117.28-124.52l0.41406-1.3906zm-464.69 229.02c-3.8242 2.9531-9.3008 2.2383-12.254-1.5859-2.9531-3.8242-2.2305-9.3086 1.5898-12.254 3.832-2.9297 9.3008-2.2305 12.254 1.5977 2.957 3.8203 2.2344 9.2969-1.5898 12.242zm57.883-33.539c-3.832 2.9414-9.3203 2.2305-12.266-1.5859-2.9414-3.832-2.2227-9.3086 1.6016-12.258 3.8203-2.9297 9.3086-2.2188 12.246 1.5977 2.9531 3.8203 2.2344 9.3086-1.582 12.246zm59.262-34.637c-3.8203 2.9414-9.3008 2.2188-12.242-1.5859-2.9531-3.832-2.2383-9.3203 1.5742-12.254 3.832-2.9453 9.3203-2.2383 12.266 1.5859 2.9453 3.8125 2.2344 9.2969-1.5977 12.254zm251.24-200.86c-4.4727 3.4453-10.863 2.6094-14.309-1.8477-3.4453-4.4688-2.6133-10.859 1.8594-14.32 4.4648-3.4219 10.852-2.6055 14.297 1.8594 3.4336 4.4648 2.6055 10.871-1.8477 14.309z"></path>
+                </svg>
+            </a>
+            <a href="#uber-uns">Über uns</a>
         </aside>
 
-        {% for section in site.sections %}
-            <section id="{{section.section-id}}">
-                <h1>{{ section.name }}</h2>
-                {{ section.content }} 
-            </section>
-        {% endfor %}
+        <section id="unser-angebot">
+            <div class="text">
+                <h1>Unser Angebot</h1>
+                  <p>Soul Food &amp; Drinks ist euer Partner für <strong>Catering in Wandlitz, Berlin und Brandenburg</strong>. Ob <strong>Firmencatering</strong>, <strong>Eventcatering</strong>, <strong>private Feiern</strong>, <strong>Hochzeiten</strong>, <strong>Geburtstage</strong>, <strong>Messen</strong> oder exklusive Business-Events – wir bringen gutes Essen, starke Drinks und das passende Eventgefühl direkt zu euch.</p>
+
+                  <p>Wir stehen für individuelles <strong>Catering</strong> mit Persönlichkeit. Von herzhaften Buffets und modernen Food-Konzepten bis hin zu stilvollem <strong>Getränkeservice</strong>, professionellem <strong>Cocktailservice</strong> und erfahrenen <strong>Barkeepern</strong> bekommt ihr bei uns alles aus einer Hand. So wird aus jeder Veranstaltung ein stimmiges Gesamterlebnis.</p>
+
+                  <p>Egal ob kleines privates Event oder große Firmenveranstaltung: Wir planen euer <strong>Catering in Berlin und Brandenburg</strong> passend zu Anlass, Gästezahl und Stil. Dabei verbinden wir Qualität, Zuverlässigkeit und eine lockere, moderne Handschrift, für die Soul Food &amp; Drinks steht.</p>
+
+                  <h2>Unser Catering für jeden Anlass</h2>
+
+                  <p>Wir bieten maßgeschneidertes <strong>Eventcatering</strong> für:</p>
+
+                  <ul>
+                    <li><strong>Firmenfeiern und Firmencatering</strong></li>
+                    <li><strong>Hochzeitscatering</strong></li>
+                    <li><strong>private Feiern und Geburtstage</strong></li>
+                    <li><strong>Messen und Business-Events</strong></li>
+                    <li><strong>Getränkeservice für Veranstaltungen</strong></li>
+                    <li><strong>Cocktailservice mit Barkeeper</strong></li>
+                  </ul>
+
+                  <p>Ob rustikal, modern, elegant oder entspannt – wir liefern das passende Konzept für euer Event in <strong>Wandlitz</strong>, <strong>Berlin</strong> und ganz <strong>Brandenburg</strong>.</p>
+            </div>
+
+              <div class="images">
+                <img
+                  src="./assets/images/Grill_Brot_Fleisch.jpeg"
+                  alt="Soul Food Drinks – Individuelles Eventcatering Drinks Service"
+                  decoding="async">
+                <img
+                  src="./assets/images/Grill_Flamme.jpeg"
+                  alt="Soul Food Drinks: Food, Drinks Eventplanung für jeden Anlass"
+                  decoding="async">
+              </div>
+        </section>
+
+        <section id="food">
+            <div class="text">
+                <h1>Food</h1>
+                <p>
+                    Wir bieten euch ein weites Spektrum von Streetfood, Buffet; BBQ bis hin zu deutschen Klassikern – ganz gleich für was euer Herz schlägt. Sprecht uns an und wir erstellen gemeinsam mit euch die Speisekarte für euer Event. 
+                    Und wie? Ihr könnt nicht anders? Ihr wollt „einfach nur“ eine Bratwurst? Alles klar, dass können wir auch – natürlich, aber dann bitte selbstgemacht von uns, dazu eine handwerklich hergestellte Schrippe vom Bäcker um die Ecke und was darf nicht fehlen? Senf! Den gibt es von der Senfmühle aus dem Nachbarort. 
+                    Wie ihr seht und kurzum: kein 0815 zu Premiumpreisen – sondern das einzig wahre: Erzeuger und Hersteller der Region.
+                </p>
+            </div>
+            <div class="images">
+                <img
+                  src="./assets/images/Soße_auf_Fleisch_mit_Pat.jpeg"
+                  alt="Soul Food Drinks – Individuelles Eventcatering Drinks Service"
+                  decoding="async">
+                <img
+                  src="./assets/images/Salat.jpeg"
+                  alt="Soul Food Drinks: Food, Drinks Eventplanung für jeden Anlass"
+                  decoding="async">
+                <img
+                  src="./assets/images/Gegrilltes_Fleisch.jpeg"
+                  alt="Soul Food Drinks: Food, Drinks Eventplanung für jeden Anlass"
+                  decoding="async">
+              </div>
+        </section>
+
+        <section id="drinks">
+            <div class="text">
+                <h1>Drinks</h1>
+                <h2>
+                    Essen, Drinks und Service aus einer Hand
+                </h2>
+                <p>
+                    Mit Soul Food & Drinks entscheidet ihr euch nicht nur für gutes Essen, sondern für ein rundes Eventkonzept. Neben hochwertigem Catering bieten wir auch professionellen Getränkeservice, kreative Drinks und erfahrene Barkeeper, die eure Gäste begeistern. So entsteht ein Event, das geschmacklich und atmosphärisch in Erinnerung bleibt.
+                    Wir können nicht nur hausgemachte Bratwurst sondern brauen unser verschieden Landbiere auch selbst.
+                    Kein Bierdurst? Kein Problem, wir bieten auch Brauhaus-Prosecco vom Hahn, ob pur oder als Sprizz-Variante an. Nicht zuletzt zaubern wir euch von klassischen Longdrinks bis extravagante Cocktails alles, um euer Event in ein absolutes Highlight zu verwandeln. 
+                    Ihr könnt euch nicht entscheiden? Hier geht es zu unserer Übersicht. 
+                    Ruft uns an und wir planen zusammen Eure nächste Feier oder noch besser, wir besprechen alles bei einem gemeinsamen Getränk.
+                </p>
+            </div>
+              <div class="images">
+                <img
+                  src="./assets/images/Bier_am_Wasser.jpeg"
+                  alt="Soul Food Drinks – Individuelles Eventcatering Drinks Service"
+                  decoding="async">
+              </div>
+        </section>
+
+        <section id="location">
+            <div class="text">
+                <h1>Location</h1>
+                <p>
+                    Ihr habt noch keine Location oder wollt „mehr als nur einen Raum“? Dann mietet das
+                    Kulturzentrum Tor-13.de
+                    Top ausgestattet mit Bühne, Ton-/Lichttechnik und großer Bar.
+                    Wir von Soul FOOD & DRINKS liefern direkt das passende Catering:
+                    vom klassischen Buffet bis Foodtruck oder Live-Cooking.
+                </p>
+            </div>
+              <div class="images">
+                <img
+                  src="./assets/images/tor13-bar.jpg"
+                  alt="TOR13 Eventlocation"
+                  decoding="async">
+              </div>
+        </section>
+
+        <section id="unser-versprechen">
+            <div class="text">
+                <h1>Unser Versprechen</h1>
+                <p>
+                    Wir betrachten uns nicht bloß als Catering-Dienst, der sich um das Essen und
+                    die Getränke bei eurer Veranstaltung kümmert. Unser Ziel ist es, euch als
+                    vollständige Eventplaner zu unterstützen. Dank unserer langjährigen Erfahrung
+                    sind wir in der Lage, auch bei großen Events wie dem "radioeins Parkfest"
+                    dafür zu sorgen, dass ihr eure eigene Party als Gast genießen könnt. Wir
+                    nehmen euch sämtlichen Stress ab, da ihr nur uns als euren einzigen
+                    Ansprechpartner benötigt und wir alles aus einer Hand anbieten können,
+                    einschließlich...
+                </p>
+                <ul>
+                    <li>Ausschankwagen</li>
+                    <li>Cocktail Wagen</li>
+                    <li>Food-Trailer</li>
+                    <li>Bestuhlung/Tische</li>
+                    <li>Teller/Besteck</li>
+                    <li>Gläser (Bier/Wein/Longdrink)</li>
+                    <li>Beleuchtung</li>
+                    <li>Sound-Systeme</li>
+                    <li>Zelte</li>
+                    <li>DJs/Band</li>
+                    <li>Hüpfburgen</li>
+                    <li>Zapfanlagen</li>
+                    <li>Barkeeper</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="kontakt">
+            <div class="text">
+                <h1>Kontakt</h1>
+                <p>
+                    Ihr sucht Catering in Wandlitz, oder einen zuverlässigen Partner für Getränkeservice und Barkeeper
+                    in Berlin/Brandenburg? Dann ist Soul Food & Drinks eure Adresse für individuelle Eventlösungen mit
+                    Geschmack, Stil und Erfahrung.
+                </p>
+            </div>
+        </section>
+
+        <section id="uber-uns">
+            <div class="text">
+                <h1>Über uns</h1>
+                <p>
+                    Was passiert, wenn sich zwei leidenschaftliche Gastronomen zum Dinner mit Freunden und Familie treffen? Richtig – es geht um Essen und Drinks, die Spaß machen und Lust auf mehr. 
+                    Neue Kreationen, Ideen über Ideen, hier von noch ein bisschen und davon… ungefähr so sahen die Abende aus. Und wie sollte es anders sein, genau an so einem Abend ist unsere Geschäftsidee entstanden. Ein unabhängiges, inhabergeführtes Catering, dass glücklich machen soll und bei dem die Freude an gutem Essen und Getränke im Vordergrund steht. Langweilig und fade? Das gibt es bei uns nicht. Seit Januar 2022 bieten wir, das sind Pat Gottfried und Marcel Irmer, unsere Catering
+                    SOUL FOOD&DRINKS in und um Wandlitz für euch an. Immer mit dabei ist unser Cocktail-Trailer, indem wir unsere leckeren Food-Ideen in die Tat umsetzen und natürlich auch unsere Drinks.
+                </p>
+            </div>
+              <div class="images">
+                <img
+                  src="./assets/images/Pat_Gottfried.jpg"
+                  alt="TOR13 Eventlocation"
+                  decoding="async">
+              </div>
+        </section>
     </main>
 
     <footer>
-        <img src="{{'assets/images/soul-food-drinks-logo.png' | relative_url}}" alt="Soul FOOD & DRINKS Logo" />
+        <img src="./assets/images/soul-food-drinks-logo.png" alt="Soul FOOD & DRINKS Logo" />
         <p>Soul FOOD & DRINKS</p>
         <p>Basdorfer Weg 1A</p>
         <p>16348 Wandlitz</p>
@@ -74,7 +266,5 @@
         <p>Soul-Food-Drinks.de</p>
         <p>Inhaber:Pat Gottfried</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/hyperscript.org@0.9.94/dist/_hyperscript.min.js" integrity="sha384-Vhc5IAlz1zenO+d5PjrPP8UuDzlMX30xrv2aMzX0DWZ15ZUvqX7RBqvRTEsavX4R" crossorigin="anonymous"></script>
   </body>
 </html>

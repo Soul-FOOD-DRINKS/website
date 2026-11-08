@@ -1,14 +1,11 @@
----
----
-
 @font-face {
     font-family: butcher;
-    src: url({{'assets/fonts/RobotoSlab-VariableFont_wght.ttf' | relative_url}})
+    src: url("../fonts/RobotoSlab-VariableFont_wght.ttf");
 }
 
 @font-face {
     font-family: brewer;
-    src: url({{'assets/fonts/OpenSans-VariableFont_wdth,wght.ttf' | relative_url}})
+    src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf");
 }
 
 *,
@@ -176,8 +173,12 @@ main {
     section {
         margin-inline: auto;
         margin-block: 5rem 5rem;
-        max-width: 75ch;
         padding-inline: 2.5rem .75rem;
+
+        .text {
+            margin-inline: auto;
+            max-width: 75ch;
+        }
 
         h1 {
             text-align: center;
@@ -196,6 +197,22 @@ main {
                 border: solid 8px #C99D67;
                 border-color: var(--col-500) transparent transparent transparent;
                 border-radius: 50%;
+            }
+        }
+
+        .images {
+            margin-top: 3rem;
+            justify-content: center;
+            display: grid;
+            margin-inline: auto;
+            max-width: 120ch;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            gap: 1rem;
+
+            img {
+                width: 100%;
+                max-height: 30rem;
+                object-fit: contain;
             }
         }
     }
