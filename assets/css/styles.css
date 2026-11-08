@@ -68,6 +68,17 @@ header {
     width: 100%;
     position: relative;
 
+    .social {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        z-index: 30;
+
+        img {
+            width: 4rem;
+        }
+    }
+
     .background {
         z-index: 20;
         position: absolute;
