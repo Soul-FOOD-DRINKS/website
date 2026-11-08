@@ -15,7 +15,9 @@
 }
 
 :root {
+    --col-900: rgb(56 56 56);
     --col-500: rgb(201 157 103);
+    --col-200: rgba(241,239,238);
     --col-100: rgba(231,229,228);
     font-size: clamp(16px, 0.5rem + 0.6svw, 2rem);
     font-family: brewer;
@@ -40,8 +42,24 @@ h1 {
     font-weight: 900;
 }
 
+h2 { 
+    font-size: 1.3rem;
+}
+
 p {
     line-heigh: 2;
+}
+
+.button {
+    border-radius: 999px;
+    background-color: var(--col-500);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: butcher;
+    padding: .5rem 1rem;
+    white-space: nowrap;
+    text-decoration: none;
 }
 
 header {
@@ -132,8 +150,17 @@ header {
         position: fixed;
         bottom: 1rem;
         right: 1rem;
-        width: 10rem;
-        height: 3rem;
+        width: 13rem;
+        height: 6rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        align-items: end;
+
+        a {
+            display: block;
+            width: min-content;
+        }
     }
 }
 
@@ -171,9 +198,12 @@ main {
     }
 
     section {
-        margin-inline: auto;
-        margin-block: 5rem 5rem;
+        padding-block: 4rem 4rem;
         padding-inline: 2.5rem .75rem;
+
+        &:nth-child(odd) {
+            background: var(--col-200);
+        }
 
         .text {
             margin-inline: auto;
@@ -185,7 +215,7 @@ main {
             position: relative;
             margin-inline: auto;
             width: max-content;
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
 
             &::before {
                 content: "";
@@ -200,6 +230,12 @@ main {
             }
         }
 
+        .button {
+            display: block;
+            width: min-content;
+            margin-inline: auto;
+        }
+
         .images {
             margin-top: 3rem;
             justify-content: center;
@@ -208,6 +244,17 @@ main {
             max-width: 120ch;
             grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
             gap: 1rem;
+
+            figure {
+                figcaption {
+                    text-align: center;
+                    color: var(--col-500);
+                    font-family: butcher;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    margin-top: .5rem;
+                }
+            }
 
             img {
                 width: 100%;
@@ -220,8 +267,15 @@ main {
 
 
 footer {
+    background-color: var(--col-900);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    padding: 2rem;
+    align-items: center;
     img {
-        height: 15rem;
+        height: 10rem;
     }
 }
 
