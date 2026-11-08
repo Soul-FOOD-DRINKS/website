@@ -283,6 +283,13 @@ footer {
         object-fit: contain;
         justify-self: end;
     }
+
+    a {
+        display: block;
+        justify-self: end;
+        color: grey;
+        text-align: center;
+    }
 }
 
 @media (min-width: 100rem) {
