@@ -16,7 +16,7 @@
 
 :root {
     --col-900: rgb(56 56 56);
-    --col-500: rgb(201 157 103);
+    --col-500: #f72dad/*rgb(201 157 103)*/;
     --col-200: rgba(241,239,238);
     --col-100: rgba(231,229,228);
     font-size: clamp(.9rem, 0.5rem + 0.6svw, 2rem);
@@ -288,7 +288,7 @@ footer {
     padding: 2rem 2rem 8rem 2rem;
     align-items: center;
 
-    img {
+    img:first-of-type{
         max-height: 10rem;
         max-width: 100%;
         object-fit: contain;
@@ -296,9 +296,20 @@ footer {
     }
 
     a {
+        grid-column: 1 / -1;
         display: block;
-        justify-self: end;
+        text-align: center;
         color: grey;
+        width: 100%
+    }
+
+    img:last-of-type{
+        grid-column: 1 / -1;
+        max-height: 10rem;
+        width: 100%;
+        object-fit: contain;
+        justify-self: end;
+        filter: invert(1);
     }
 }
 
